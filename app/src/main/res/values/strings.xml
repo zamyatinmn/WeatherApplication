@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Weather app</string>
+    <string name="nav_header_subtitle">Developed by Maxim Zamyatin</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Weather</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_history">History</string>
+
+
+    <string name="city">Chelyabinsk</string>
+
+    <string name="temperatureUnits" translatable="false">°С</string>
+    <string name="windSpeed">Wind</string>
+    <integer name="windValue">0</integer>
+    <string name="windUnits" translatable="false">m/s</string>
+    <string name="wtg">WTG</string>
+    <string name="checkBox_wind">Show wind speed</string>
+    <string name="checkBox_humidity">Show humidity</string>
+    <string name="settingsText">Settings</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="wikipedia" translatable="false">wikipedia</string>
+    <string name="humidity">Humidity</string>
+    <string name="humidityUnits" translatable="false">%</string>
+    <string name="humidityValue" translatable="false">10</string>
+    <string name="empty_list" translatable="false">empty list</string>
+    <string name="are_you_sure">Are you really want choose </string>
+    <string name="confirm">Confirm</string>
+    <string name="error">Error</string>
+    <string name="error_text">An error occurred while connecting to the server</string>
+    <string name="write_city">write city</string>
+    <string name="get_location">get location</string>
+    <string name="history">History</string>
+    <string name="developed_by">Developed by Max Zamyatin</string>
+    <string name="initial_temp_value">0</string>
+    <string-array name="Cities">
+        <item>Moscow</item>
+        <item>Saint-Petersburg</item>
+        <item>Ekaterinburg</item>
+        <item>Chelyabinsk</item>
+        <item>Krasnodar</item>
+        <item>Sochi</item>
+        <item>Maykop</item>
+        <item>Volgograd</item>
+        <item>Rostov-on-don</item>
+        <item>Murmansk</item>
+        <item>Yakutsk</item>
+    </string-array>
+</resources>

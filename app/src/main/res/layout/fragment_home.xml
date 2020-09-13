@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_wtg"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/city"
+        style="@style/wrap"
+        android:text="@string/city"
+        android:textSize="@dimen/text_size"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/temperatureUnits"
+        style="@style/wrap"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/temperatureUnits"
+        android:textSize="@dimen/temp_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windWord"
+        style="@style/wrap"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/windSpeed"
+        android:textSize="@dimen/wind_size"
+        app:layout_constraintEnd_toStartOf="@+id/windUnits"
+        app:layout_constraintTop_toTopOf="@+id/windUnits" />
+
+    <TextView
+        android:id="@+id/windUnits"
+        style="@style/wrap"
+        android:layout_marginTop="44dp"
+        android:text="@string/windUnits"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/temperatureUnits"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureUnits" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/wtgSwitch"
+        style="@style/wrap"
+        android:layout_marginTop="4dp"
+        android:text="@string/wtg"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/windUnits"
+        app:layout_constraintTop_toBottomOf="@+id/windUnits" />
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        style="@style/wrap"
+        android:text="@string/initial_temp_value"
+        android:textSize="@dimen/temp_size"
+        app:layout_constraintBottom_toBottomOf="@+id/temperatureUnits"
+        app:layout_constraintEnd_toStartOf="@+id/temperatureUnits" />
+
+    <TextView
+        android:id="@+id/windValue"
+        style="@style/wrap"
+        android:layout_marginEnd="12dp"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@+id/windUnits"
+        app:layout_constraintTop_toTopOf="@+id/windUnits" />
+
+    <TextView
+        android:id="@+id/humidity"
+        style="@style/wrap"
+        android:layout_marginTop="72dp"
+        android:text="@string/humidity"
+        android:textSize="@dimen/wind_size"
+        app:layout_constraintEnd_toEndOf="@+id/windWord"
+        app:layout_constraintTop_toBottomOf="@+id/windWord" />
+
+    <TextView
+        android:id="@+id/humidityValue"
+        style="@style/wrap"
+        android:layout_marginEnd="12dp"
+        android:text="@string/humidityValue"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@+id/humidityUnits"
+        app:layout_constraintTop_toTopOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/humidityUnits"
+        style="@style/wrap"
+        android:text="@string/humidityUnits"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/wtgSwitch"
+        app:layout_constraintTop_toTopOf="@+id/humidityValue" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
